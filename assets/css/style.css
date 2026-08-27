@@ -535,3 +535,18 @@ p{ margin:0 0 1.1em; }
     transition-duration:.01ms !important; scroll-behavior:auto !important; }
   .reveal{ opacity:1; transform:none; }
 }
+
+/* ---------- social ---------- */
+.social{
+  display:inline-grid; place-items:center; margin-top:18px;
+  width:42px; height:42px; border-radius:12px;
+  border:1px solid var(--line); background:var(--ink-3);
+  transition:border-color .3s var(--ease), background .3s var(--ease), transform .3s var(--ease);
+}
+.social svg{
+  width:20px; height:20px; fill:none; stroke:var(--silver-mid); stroke-width:1.5;
+  stroke-linecap:round; stroke-linejoin:round;
+  transition:stroke .3s var(--ease);
+}
+.social:hover{ border-color:var(--glass); background:rgba(77,107,105,.16); transform:translateY(-2px); }
+.social:hover svg{ stroke:var(--glass-hi); }
